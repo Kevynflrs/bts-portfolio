@@ -1,29 +1,14 @@
-import React from "react";
+import React from 'react';
+import Navbar from '../../Components/Common/Navbar/Navbar';
+import Preview from '../Preview/Preview';
 
-export default function Head() {
+export default function Header() {
     return (
-        <div className="flex items-center justify-center space-x-48 h-16 text-2xl opacity-90 border-b border-b-black bg-[#d5d1de]">
-            <button>
-                à propos
-            </button>
-            <button>
-                Tableau de synthèse
-            </button>
-            <button>
-                Compétences
-            </button>
-            <button>
-                Projets
-            </button>
-            <button>
-                Expériences
-            </button>
-            <button>
-                Veille
-            </button>
-            <a href="#Contact">
-                Contact
-            </a>
-        </div>
+        <>
+            <Navbar/>
+            <div className='py-32'>
+                <Preview/>
+            </div>
+        </>
     );
-}
+};
