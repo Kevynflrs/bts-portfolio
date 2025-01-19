@@ -1,18 +1,14 @@
 import React from "react";
 import "./index.css";
-import Head from "./pages/Header/Header";
-import Main from "./pages/Main/Main";
-import Footer from "./pages/Footer/Footer";
+import AboutSection from "./pages/About/About";
 
 function App() {
 
   return (
     <>
       <div>
-        <Head />
+        <AboutSection/>
       </div>
-      <Main />
-      <Footer />
     </>
   );
 }
