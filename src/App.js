@@ -1,13 +1,13 @@
 import React from "react";
 import "./index.css";
-import AboutSection from "./pages/About/About";
+import Header from "./pages/Header/Header";
 
 function App() {
 
   return (
     <>
       <div>
-        <AboutSection/>
+        <Header/>
       </div>
     </>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function AboutSection() {
+export default function Header() {
   return (
     <>
       <div className='h-24 flex items-center justify-center space-x-16 font-[#081C15] text-2xl'>
