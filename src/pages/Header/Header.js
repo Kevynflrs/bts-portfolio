@@ -3,25 +3,25 @@ import React from "react";
 export default function Head() {
     return (
         <div className="flex items-center justify-center space-x-48 h-16 text-2xl opacity-90 border-b border-b-black bg-[#d5d1de]">
-            <a href="" className="">
+            <button>
                 à propos
-            </a>
-            <a href="" className="">
+            </button>
+            <button>
                 Tableau de synthèse
-            </a>
-            <a href="" className="">
+            </button>
+            <button>
                 Compétences
-            </a>
-            <a href="" className="">
+            </button>
+            <button>
                 Projets
-            </a>
-            <a href="" className="">
+            </button>
+            <button>
                 Expériences
-            </a>
-            <a href="" className="">
+            </button>
+            <button>
                 Veille
-            </a>
-            <a href="" className="#Contact">
+            </button>
+            <a href="#Contact">
                 Contact
             </a>
         </div>

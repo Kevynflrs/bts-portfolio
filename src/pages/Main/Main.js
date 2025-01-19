@@ -9,9 +9,7 @@ export default function Main() {
         <img
           className="w-full h-full object-cover"
           src="/HomePage.jpg"
-          alt="Home page image"
-          // width={2150}
-          // height={1080}
+          alt="Homepage-image"
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center">
           <h1 className="text-6xl font-bold">Kevyn Flores</h1>
