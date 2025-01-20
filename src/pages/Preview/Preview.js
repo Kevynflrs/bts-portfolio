@@ -3,7 +3,7 @@ import ButtonComponent from '../../Components/Common/Button/ButtonComponent';
 
 export default function Preview() {
     return (
-        <div className="relative p-6 space-y-8 max-w-4xl mx-auto">
+        <div id='Preview' className="relative p-6 space-y-8 max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
                 <div className="flex-1 space-y-4 md:space-y-6">
                     <h1 className="text-left font-sans text-3xl md:text-5xl font-normal">

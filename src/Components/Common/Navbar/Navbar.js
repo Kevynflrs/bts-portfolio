@@ -5,7 +5,7 @@ export default function Navbar() {
     <div className="sticky top-0 h-24 flex items-center justify-between px-4 md:px-16 bg-white shadow-md">
       <a href='/' className="text-[#081C15] text-2xl font-bold">Mon Portfolio</a>
       <div className="hidden md:flex space-x-8">
-        <div>Profil</div>
+        <a href='#preview'>Profil</a>
         <div>Tableau de synthèse</div>
         <div>Compétences</div>
         <div>Expériences</div>
