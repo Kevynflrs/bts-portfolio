@@ -3,6 +3,7 @@ import "./index.css";
 import Header from "./pages/Header/Header";
 import Profile from "./pages/Profile/Profile";
 import TableauSynthese from "./pages/TableauSynthese/TableauSynthese";
+import Competences from "./pages/Compétences/Competences";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Profile />
       <TableauSynthese />
+      <Competences />
     </>
   );
 }
