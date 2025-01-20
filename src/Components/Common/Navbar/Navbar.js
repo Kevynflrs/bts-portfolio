@@ -10,7 +10,7 @@ export default function Navbar() {
     { label: 'Expériences', href: '#experiences' },
     { label: 'Veille', href: '#veille' },
     { label: 'Projets', href: '#projets' },
-    { label: 'Contact', href: '#contact' }
+    { label: 'Contact', href: '#footer' }
   ];
 
   return (
