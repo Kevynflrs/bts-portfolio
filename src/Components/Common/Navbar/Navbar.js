@@ -3,7 +3,7 @@ import React from 'react';
 export default function Navbar() {
   return (
     <div className="sticky top-0 h-24 flex items-center justify-between px-4 md:px-16 bg-white shadow-md">
-      <div className="text-[#081C15] text-2xl font-bold">Mon Portfolio</div>
+      <a href='/' className="text-[#081C15] text-2xl font-bold">Mon Portfolio</a>
       <div className="hidden md:flex space-x-8">
         <div>Profil</div>
         <div>Tableau de synthèse</div>
