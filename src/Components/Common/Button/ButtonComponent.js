@@ -35,9 +35,11 @@ export default function ButtonComponent({ label, icon, iconName, actionType, act
     };
 
     return (
-        <button onClick={handleClick} className="bg-[#081C15] text-[#FBFBFE] px-4 py-2 rounded-lg flex items-center shadow-md hover:bg-[#0a2a1b] transition duration-300">
-            <span className="text-3xl mr-2">{label}</span>
-            {icon && <img src={icon} alt={iconName} className="w-10 h-10" />}
+        <button onClick={handleClick} className="w-full bg-[#081C15] text-[#FBFBFE] px-4 py-2 rounded-lg flex items-center justify-center lg:justify-between shadow-md hover:bg-[#0a2a1b] transition duration-300">
+            <span className="text-xl md:text-2xl lg:text-3xl">{label}</span>
+            {icon && (
+                <img src={icon} alt={iconName} className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 ml-2" />
+            )}
         </button>
     );
 };
