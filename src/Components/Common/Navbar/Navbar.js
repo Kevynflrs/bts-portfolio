@@ -33,7 +33,7 @@ export default function Navbar() {
           <img 
             src={`${process.env.PUBLIC_URL}/moon.png`} 
             alt="toggle to dark theme" 
-            className="w-8 h-8" 
+            className="hidden md:block w-8 h-8 md:w-8 md:h-8 cursor-pointer" 
           />
           <button 
             onClick={() => setIsOpen(!isOpen)} 
@@ -56,6 +56,13 @@ export default function Navbar() {
               {item.label}
             </a>
           ))}
+          <div className="flex justify-center py-2 md:hidden">
+            <img 
+              src={`${process.env.PUBLIC_URL}/moon.png`} 
+              alt="toggle to dark theme" 
+              className="w-8 h-8 md:w-8 md:h-8 cursor-pointer" 
+            />
+          </div>
         </div>
       )}
     </div>

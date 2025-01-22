@@ -1,10 +1,19 @@
 import React from 'react';
 import ButtonComponent from '../../Components/Common/Button/ButtonComponent';
 import ProfileText from './ProfileText';
+import { useEffect, useState } from 'react';
 
 export default function Profile() {
+    const [isMobile, setIsMobile] = useState(window.matchMedia("(max-width: 768px)").matches);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.matchMedia("(max-width: 768px)").matches);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
-      <div id='#preview' className="container mx-auto p-4 lg:p-10">
+      <div id='#preview' className="container mx-auto p-4 lg:p-10 mt-24 md:mt-0">
         <div className="flex flex-col max-w-[1280px] mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal mb-6 lg:mb-12 text-center">
             Profil
@@ -17,10 +26,10 @@ export default function Profile() {
                 className="rounded-[15px] border-[#081C15] border w-full max-w-[360px] h-auto aspect-[360/506] object-cover"
               />
               <ButtonComponent 
-                label="Télécharger CV"
-                icon={`${process.env.PUBLIC_URL}/download.png`}
-                iconName="download"
-                actionType="download"
+                label={isMobile ? "Voir CV" : "Télécharger CV"}
+                icon={`${process.env.PUBLIC_URL}/${isMobile ? "arrow.png" : "download.png"}`}
+                iconName={isMobile ? "view" : "download"}
+                actionType={isMobile ? "navigate" : "download"}
                 actionValue="/Cv.pdf"
               />
             </div>
@@ -31,4 +40,4 @@ export default function Profile() {
         </div>
       </div>
     );
-  }
+}

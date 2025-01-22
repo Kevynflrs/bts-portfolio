@@ -4,6 +4,7 @@ import Header from "./pages/Header/Header";
 import Profile from "./pages/Profile/Profile";
 import TableauSynthese from "./pages/TableauSynthese/TableauSynthese";
 import Competences from "./pages/Compétences/Competences";
+import Footer from "./pages/footer/footer";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Profile />
       <TableauSynthese />
       <Competences />
+      <Footer />
     </>
   );
 }
