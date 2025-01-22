@@ -5,15 +5,19 @@ import Profile from "./pages/Profile/Profile";
 import TableauSynthese from "./pages/TableauSynthese/TableauSynthese";
 import Competences from "./pages/Compétences/Competences";
 import Footer from "./pages/footer/footer";
+import Experience from "./pages/Expériences/Experiences";
 
 function App() {
 
   return (
     <>
       <Header />
-      <Profile />
-      <TableauSynthese />
-      <Competences />
+      <div className="space-y-8 lg:space-y-16">
+        <Profile />
+        <TableauSynthese />
+        <Competences />
+        <Experience />
+      </div>
       <Footer />
     </>
   );
