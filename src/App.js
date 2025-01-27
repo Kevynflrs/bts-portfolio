@@ -6,6 +6,7 @@ import TableauSynthese from "./pages/TableauSynthese/TableauSynthese";
 import Competences from "./pages/Compétences/Competences";
 import Footer from "./pages/footer/footer";
 import Experience from "./pages/Expériences/Experiences";
+import Projets from "./pages/Projets/Projets";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Profile />
         <TableauSynthese />
         <Competences />
+        <Projets />
         <Experience />
       </div>
       <Footer />
