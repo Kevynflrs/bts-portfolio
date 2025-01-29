@@ -7,16 +7,16 @@ export default function Navbar() {
     { label: 'Profil', href: '#preview' },
     { label: 'Tableau de synthèse', href: '#tableau' },
     { label: 'Compétences', href: '#competences' },
+    { label: 'Projets', href: '#projets' },
     { label: 'Expériences', href: '#experiences' },
     { label: 'Veille', href: '#veille' },
-    { label: 'Projets', href: '#projets' },
     { label: 'Contact', href: '#footer' }
   ];
 
   return (
-    <div className="fixed w-full top-0 z-50">
+    <section className="fixed w-full top-0 z-50">
       <div className="h-24 flex items-center justify-between px-4 md:px-16 bg-white shadow-md">
-        <a href='/' className="text-2xl font-bold">Mon Portfolio</a>
+        <a href='#preview' className="text-2xl font-bold">Mon Portfolio</a>
         <div className="hidden md:flex space-x-8">
           {navItems.map((item) => (
             <a 
@@ -30,11 +30,11 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center space-x-4">
-          <img 
+          {/* <img 
             src={`${process.env.PUBLIC_URL}/moon.png`} 
             alt="toggle to dark theme" 
             className="hidden md:block w-8 h-8 md:w-8 md:h-8 cursor-pointer" 
-          />
+          /> */}
           <button 
             onClick={() => setIsOpen(!isOpen)} 
             className="md:hidden text-[#081C15] text-2xl"
@@ -56,15 +56,15 @@ export default function Navbar() {
               {item.label}
             </a>
           ))}
-          <div className="flex justify-center py-2 md:hidden">
+          {/* <div className="flex justify-center py-2 md:hidden">
             <img 
               src={`${process.env.PUBLIC_URL}/moon.png`} 
               alt="toggle to dark theme" 
               className="w-8 h-8 md:w-8 md:h-8 cursor-pointer" 
             />
-          </div>
+          </div> */}
         </div>
       )}
-    </div>
+    </section>
   );
 }

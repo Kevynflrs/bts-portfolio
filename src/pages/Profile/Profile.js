@@ -13,7 +13,7 @@ export default function Profile() {
     }, []);
 
     return (
-      <div id='#preview' className="container mx-auto p-4 lg:p-10 mt-24 md:mt-0">
+      <section id='#preview' className="container mx-auto p-4 lg:p-10 mt-24 md:mt-0">
         <div className="flex flex-col max-w-[1280px] mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal mb-6 lg:mb-12 text-center">
             Profil
@@ -21,13 +21,13 @@ export default function Profile() {
           <div className="flex flex-col lg:flex-row lg:gap-12">
             <div className="w-full lg:w-[360px] flex flex-col items-center lg:items-start space-y-8 mb-8 lg:mb-0">
               <img
-                src={`${process.env.PUBLIC_URL}/PP.png`}
+                src={`${process.env.PUBLIC_URL}/Pro/PP.png`}
                 alt="Profile"
                 className="rounded-[15px] border-[#081C15] border w-full max-w-[360px] h-auto aspect-[360/506] object-cover"
               />
               <ButtonComponent 
                 label={isMobile ? "Voir CV" : "Télécharger CV"}
-                icon={`${process.env.PUBLIC_URL}/${isMobile ? "arrow.png" : "download.png"}`}
+                icon={`${process.env.PUBLIC_URL}/icon/${isMobile ? "arrow.png" : "download.png"}`}
                 iconName={isMobile ? "view" : "download"}
                 actionType={isMobile ? "navigate" : "download"}
                 actionValue="/Cv.pdf"
@@ -38,6 +38,6 @@ export default function Profile() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
 }
