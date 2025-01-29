@@ -13,16 +13,22 @@ function App() {
 
   return (
     <>
-      <Header />
-      <div className="space-y-8 lg:space-y-16">
+      <header>
+        <Header />
+      </header>
+
+      <main className="space-y-8 lg:space-y-16">
         <Profile />
         <TableauSynthese />
         <Competences />
         <Projets />
         <Experience />
         <Veille />
-      </div>
-      <Footer />
+      </main>
+      
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

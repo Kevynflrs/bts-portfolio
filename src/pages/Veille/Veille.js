@@ -9,12 +9,12 @@ export default function Veille() {
   const items = [
     {
       title: "Technologique",
-      image: "/Technologique.png",
+      image: "/icon/Technologique.png",
       content: <Technologique />,
     },
     {
       title: "Juridique",
-      image: "/Juridique.png",
+      image: "/icon/Juridique.png",
       content: <Juridique />,
     },
   ];
@@ -30,9 +30,8 @@ export default function Veille() {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <section className="flex flex-col items-center">
       <h1 className="text-center font-sans text-4xl font-bold mt-8">Veille</h1>
-      {/* Container des items */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
         {items.map((item, index) => (
           <div
@@ -50,7 +49,6 @@ export default function Veille() {
         ))}
       </div>
 
-      {/* Popup */}
       {isPopupOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 px-4">
           <div className="bg-white p-8 rounded-lg shadow-lg w-2/3 h-2/3 max-w-3xl max-h-[80vh] overflow-y-auto relative">
@@ -64,6 +62,6 @@ export default function Veille() {
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 }
