@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TableauSynthese() {
   return (
-    <section id='#tableau' className="container mx-auto p-4 lg:p-10">
+    <section id='tableau' className="container mx-auto p-4 lg:p-10">
       <div className="flex flex-col max-w-[1280px] mx-auto">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal mb-6 lg:mb-12 text-center">
           Tableau de synthèse
