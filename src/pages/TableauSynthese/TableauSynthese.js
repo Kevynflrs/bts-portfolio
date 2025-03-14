@@ -9,7 +9,7 @@ export default function TableauSynthese() {
         </h1>
         <div className="flex flex-col items-center lg:items-start space-y-8 mb-8 lg:mb-0">
           <img
-            src={`${process.env.PUBLIC_URL}/Pro/tableau.png`} 
+            src={`${process.env.PUBLIC_URL}/Pro/Tableau.png`} 
             alt="Tableau de synthèse"
           />
         </div>
