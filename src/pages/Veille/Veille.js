@@ -30,7 +30,7 @@ export default function Veille() {
   };
 
   return (
-    <section className="flex flex-col items-center">
+    <section id="veille" className="flex flex-col items-center">
       <h1 className="text-center font-sans text-4xl font-bold mt-8">Veille</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
         {items.map((item, index) => (
